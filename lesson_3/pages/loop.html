@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 3 | Loop</title>
+    </head>
+    <body>
+        <h1>Loop</h1>
+        <b>open console</b>
+        <dl>
+            <dt>for</dt>
+            <dd>?</dd>
+            <dt>while</dt>
+            <dd>?</dd>
+            <dt>for of</dt>
+            <dd>?</dd>
+            <dt>for of</dt>
+            <dd>?</dd>
+        </dl>
+        <script>
+            let person = {
+                nameFirst: "Badral",
+                nameLast: "Lkhagva",
+                age: 33,
+                address: {
+                    street: "19",
+                    city: "Ulaanbaatar",
+                    district: "Bayanzurkh",
+                },
+                hobbies: ["basketball", "football", "movies"],
+            };
+            const todos = [
+                {
+                    id: 0,
+                    action: "wake up",
+                    complete: true,
+                },
+                {
+                    id: 1,
+                    action: "eat breakfast",
+                    complete: false,
+                },
+                {
+                    id: 2,
+                    action: "drink coffee",
+                    complete: true,
+                },
+                {
+                    id: 3,
+                    action: "take out trash",
+                    complete: true,
+                },
+            ];
+
+            //   how it start  when it ends, step
+            for (let index = 0; index < 10; index++) {
+                const element = index;
+                console.log("for", element);
+            }
+
+            let i = 0;
+            while (i < 10) {
+                console.log("while", i);
+                i++;
+            }
+
+            for (let todo of todos) {
+                console.log("todo", todo.action);
+            }
+
+            for (prop in person) {
+                console.log("prop", prop);
+            }
+        </script>
+    </body>
+</html>
