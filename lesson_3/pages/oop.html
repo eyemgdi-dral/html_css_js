@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 3 | OOP</title>
+    </head>
+    <body>
+        <h1>OOP</h1>
+        <b>open console</b>
+        <p>check scripts</p>
+    </body>
+    <script>
+        function Person(nameFirst, nameLast, dob) {
+            this.nameFirst = nameFirst;
+            this.nameLast = nameLast;
+            this.birthday = dob;
+        }
+        Person.prototype.nameFullArrow = () => {
+            return this.nameFirst + " " + this.nameLast;
+        };
+        //scope example
+        Person.prototype.nameFull = function () {
+            return this.nameFirst + " " + this.nameLast;
+        };
+
+        const person1 = new Person("Badral", "Lkhagva", "1989-9-12");
+        const person2 = new Person("Dral", "Lkhagva", "1989-9-12");
+        const objPerson = {
+            nameFirst: "eyEmGDi",
+            nameLast: "Lkhagva",
+            birthday: "1989-9-12",
+        };
+
+        const mes = [person1, person2];
+        console.log(person1);
+
+        class Dog {
+            constructor(name, breed) {
+                this.name = name;
+                this.breed = breed;
+            }
+
+            getDetail() {
+                return {name: this.name, breed: this.breed};
+            }
+        }
+        const dog1 = new Dog("Nancy", "Puddle");
+        console.log("dog", dog1.getDetail());
+    </script>
+</html>
