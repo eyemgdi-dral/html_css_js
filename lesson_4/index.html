@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 4 | DOM</title>
+    </head>
+    <body>
+        <h1>DOM</h1>
+        <ul>
+            <li><a href="./pages/selector.html">selection</a></li>
+            <li><a href="./pages/selector.html">selection</a></li>
+        </ul>
+
+        <ul id="dataList">
+            <li>text_1</li>
+            <li>text_2</li>
+            <li>text_3</li>
+        </ul>
+    </body>
+    <script>
+        const dataList = document.getElementById("dataList");
+        // const dataList = document.querySelector("#dataList");
+
+        console.log("dataList", dataList);
+        console.log("dataList", dataList.children);
+        console.log("dataList", dataList.childNodes);
+
+        //Editing content
+        console.log("before:", dataList.children[1].textContent);
+
+        const childFirst = dataList.firstElementChild;
+        childFirst.innerHTML = "<h3>First</h3>";
+
+        const childSecond = dataList.children[1];
+        childSecond.textContent = "This is edited content";
+
+        //TIP:Editing style
+        const childThird = dataList.lastElementChild;
+        childThird.innerHTML = "<h3>Last</h3>";
+        childThird.style.background = "blue";
+        childThird.style.color = "white";
+    </script>
+</html>
