@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson 4 | Event</title>
+    </head>
+    <body>
+        <h1>Event</h1>
+
+        <button id="btn_1">Click me</button>
+        <h3>Counter : <span id="cnt">0</span></h3>
+
+        <h3>Asset</h3>
+        <ul>
+            <li>addEventListener</li>
+            <li>parseInt | window</li>
+        </ul>
+    </body>
+    <script>
+        const btn = document.querySelector("#btn_1");
+
+        btn.addEventListener("click", function (e) {
+            //this example
+            console.log("this", this);
+            console.log("e", e);
+            let cntEl = document.querySelector("#cnt");
+            console.log("cntEl", cntEl.textContent);
+            cntEl.textContent = parseInt(cntEl.textContent) + parseInt(cntEl.textContent);
+        });
+    </script>
+</html>
