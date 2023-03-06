@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./asset/style.css" />
+        <link rel="stylesheet" href="./asset/color.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <style>
+            html,
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Roboto", sans-serif;
+            }
+            .gdi-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="gdi-top">
+            <div class="gdi-bar gdi-theme gdi-top gdi-left-align gdi-large">
+                <a class="gdi-bar-item gdi-button gdi-right gdi-hide-large gdi-hover-white gdi-large gdi-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-theme-l1">Logo</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hover-white">About</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hover-white">Values</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hover-white">News</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hover-white">Contact</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hide-medium gdi-hover-white">Clients</a>
+                <a href="#" class="gdi-bar-item gdi-button gdi-hide-small gdi-hide-medium gdi-hover-white">Partners</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class="gdi-sidebar gdi-bar-block gdi-collapse gdi-large gdi-theme-l5 gdi-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="gdi-right gdi-xlarge gdi-padding-large gdi-hover-black gdi-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <h4 class="gdi-bar-item"><b>Menu</b></h4>
+            <a class="gdi-bar-item gdi-button gdi-hover-black" href="#">Link</a>
+            <a class="gdi-bar-item gdi-button gdi-hover-black" href="#">Link</a>
+            <a class="gdi-bar-item gdi-button gdi-hover-black" href="#">Link</a>
+            <a class="gdi-bar-item gdi-button gdi-hover-black" href="#">Link</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="gdi-overlay gdi-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+        <div class="gdi-main" style="margin-left: 250px">
+            <div class="gdi-row gdi-padding-64">
+                <div class="gdi-twothird gdi-container">
+                    <h1 class="gdi-text-teal">Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="gdi-third gdi-container">
+                    <p class="gdi-border gdi-padding-large gdi-padding-32 gdi-center">AD</p>
+                    <p class="gdi-border gdi-padding-large gdi-padding-64 gdi-center">AD</p>
+                </div>
+            </div>
+
+            <div class="gdi-row">
+                <div class="gdi-twothird gdi-container">
+                    <h1 class="gdi-text-teal">Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="gdi-third gdi-container">
+                    <p class="gdi-border gdi-padding-large gdi-padding-32 gdi-center">AD</p>
+                    <p class="gdi-border gdi-padding-large gdi-padding-64 gdi-center">AD</p>
+                </div>
+            </div>
+
+            <div class="gdi-row gdi-padding-64">
+                <div class="gdi-twothird gdi-container">
+                    <h1 class="gdi-text-teal">Heading</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="gdi-third gdi-container">
+                    <p class="gdi-border gdi-padding-large gdi-padding-32 gdi-center">AD</p>
+                    <p class="gdi-border gdi-padding-large gdi-padding-64 gdi-center">AD</p>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <!-- <div class="gdi-center gdi-padding-32">
+                <div class="gdi-bar">
+                    <a class="gdi-button gdi-black" href="#">1</a>
+                    <a class="gdi-button gdi-hover-black" href="#">2</a>
+                    <a class="gdi-button gdi-hover-black" href="#">3</a>
+                    <a class="gdi-button gdi-hover-black" href="#">4</a>
+                    <a class="gdi-button gdi-hover-black" href="#">5</a>
+                    <a class="gdi-button gdi-hover-black" href="#">»</a>
+                </div>
+            </div> -->
+
+            <footer id="myFooter">
+                <div class="gdi-container gdi-theme-l2 gdi-padding-32">
+                    <h4>Footer</h4>
+                </div>
+
+                <div class="gdi-container gdi-theme-l1">
+                    <p>Powered by <a href="https://www.gdischools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                if (mySidebar.style.display === "block") {
+                    mySidebar.style.display = "none";
+                    overlayBg.style.display = "none";
+                } else {
+                    mySidebar.style.display = "block";
+                    overlayBg.style.display = "block";
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            }
+        </script>
+    </body>
+</html>

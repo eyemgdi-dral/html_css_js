@@ -1,0 +1,75 @@
+.gdi-theme-l5 {
+    color: #000 !important;
+    background-color: #f0f0f0 !important;
+}
+.gdi-theme-l4 {
+    color: #000 !important;
+    background-color: #cccccc !important;
+}
+.gdi-theme-l3 {
+    color: #fff !important;
+    background-color: #999999 !important;
+}
+.gdi-theme-l2 {
+    color: #fff !important;
+    background-color: #666666 !important;
+}
+.gdi-theme-l1 {
+    color: #fff !important;
+    background-color: #333333 !important;
+}
+.gdi-theme-d1 {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-theme-d2 {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-theme-d3 {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-theme-d4 {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-theme-d5 {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+
+.gdi-theme-light {
+    color: #000 !important;
+    background-color: #f0f0f0 !important;
+}
+.gdi-theme-dark {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-theme-action {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+
+.gdi-theme {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-text-theme {
+    color: #000000 !important;
+}
+.gdi-border-theme {
+    border-color: #000000 !important;
+}
+
+.gdi-hover-theme:hover {
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+.gdi-hover-text-theme:hover {
+    color: #000000 !important;
+}
+.gdi-hover-border-theme:hover {
+    border-color: #000000 !important;
+}
