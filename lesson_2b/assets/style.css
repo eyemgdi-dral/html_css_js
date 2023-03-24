@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+.slider_con {
+    box-sizing: border-box;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider_ctrl {
+    box-sizing: border-box;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    height: 100%;
+    border: 1px solid black;
+    color: white;
+    vertical-align: middle;
+    line-height: 500px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+.slider_ctrl:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+.right {
+    right: 0;
+    text-align: right;
+}
+.left {
+    left: 0;
+    text-align: left;
+}
+
+.left:hover ~ .track {
+    left: 10%;
+}
+
+.right:hover + .track {
+    left: -150%;
+}
+
+.track {
+    font-size: 0;
+    position: relative;
+    left: -70%;
+    /* width: 100%; */
+    transition: 1s;
+}
+.slider_item {
+    width: 80%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
