@@ -1,0 +1,12 @@
+.form-con {
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 15px;
+}
+.ctrl {
+    padding: 5px;
+}
+.ctrl label {
+    vertical-align: top;
+}

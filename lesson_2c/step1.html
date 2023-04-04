@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lesson | Form</title>
+    </head>
+    <body>
+        <h1>Register Form</h1>
+        <form action="/do_register.html">
+            Name <br />
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" /> <br />
+            <br />
+            Gender <br />
+            <input type="radio" name="gender" value="Male" />Male <input type="radio" name="gender" value="Female" />Female <br /><br />
+            Age <br />
+            <input type="number" name="age" /><br />
+            <br />
+            Profession <br />
+            <select>
+                <option>Project Manager</option>
+                <option>Front-End Developer</option>
+                <option>Back-End Developer</option>
+                <option>Designer</option>
+            </select>
+            <br /><br />
+
+            Language <br />
+            <input type="checkbox" name="language" value="English" />English <input type="checkbox" name="language" value="Korean" />Korean <input type="checkbox" name="language" value="Mongolian" />Mongolian <br /><br />
+
+            Description <br />
+            <textarea></textarea>
+        </form>
+    </body>
+</html>

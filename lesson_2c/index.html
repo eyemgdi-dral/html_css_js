@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./asset/css/style.css" />
+    </head>
+    <body>
+        <div class="form-con">
+            <h2>User Register</h2>
+            <form action="/do_register.html" method="GET">
+                <div class="ctrl">
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" name="first_name" type="text" placeholder="First Name" />
+                </div>
+
+                <div class="ctrl">
+                    <label for="last_name">Last Name</label>
+                    <input id="last_name" name="last_name" type="text" placeholder="Last Name" />
+                </div>
+
+                <div class="ctrl">
+                    <label>Gender</label>
+                    <input id="gender_male" type="radio" name="gender" value="Male" />
+                    <label for="gender_male">Male</label>
+
+                    <input id="gender_female" type="radio" name="gender" value="Female" />
+                    <label for="gender_female">Female</label>
+                </div>
+
+                <div class="ctrl">
+                    <label for="age">Age</label>
+                    <input id="age" type="number" placeholder="Age" />
+                </div>
+
+                <div class="ctrl">
+                    <label for="prof">Profession</label>
+                    <select id="prof">
+                        <option>Project Manager</option>
+                        <option>Front-End Developer</option>
+                        <option>Back-End Developer</option>
+                        <option>Designer</option>
+                    </select>
+                </div>
+
+                <div class="ctrl">
+                    <label>Language</label>
+                    <input type="checkbox" name="language" value="English" id="english" />
+                    <label for="english">English</label>
+                    <input type="checkbox" name="language" value="Korean" id="korean" />
+                    <label for="korean">Korean</label>
+                    <input type="checkbox" name="language" value="Mongolian" id="mongolian" />
+                    <label for="mongolian">Mongolian</label>
+                </div>
+
+                <div class="ctrl">
+                    <label for="address">Address</label>
+                    <textarea id="address"></textarea>
+                </div>
+                <button>Save</button>
+            </form>
+        </div>
+    </body>
+</html>
