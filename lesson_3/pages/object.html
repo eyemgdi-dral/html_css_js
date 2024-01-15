@@ -34,6 +34,51 @@
                 hobbies: ["basketball", "football", "movies"],
             };
             console.log("preson", preson);
+
+            export const filterTree = (tree, ids) => {
+                debugger;
+                // console.log('common', tree)
+                let par = [];
+
+                for (let i = 0; i < tree[0].children.length; i++) {
+                    const element = tree[0].children[i];
+                    let ar = [];
+                    if (element.children && element.children.length > 0) {
+                        let arr = [];
+                        for (let j = 0; j < element.children.length; j++) {
+                            let element2 = element.children[j];
+
+                            let arr2 = [];
+
+                            if (element2.children && element2.children.length > 0) {
+                                for (let o = 0; o < element2.children.length; o++) {
+                                    const element3 = element2.children[o];
+
+                                    if (ids.includes(element3.idx)) {
+                                        arr2.push(element3);
+                                    }
+                                }
+                            }
+
+                            element2.children = arr2;
+                            if (element2.children && element2.children.length > 0) {
+                                arr.push(element2);
+                            }
+                        }
+
+                        element.children = arr;
+                        if (element.children.length > 0) {
+                            par.push(element);
+                        }
+                    }
+                    if (ar.length > 0) {
+                        par.push(ar);
+                    }
+                }
+
+                tree[0].children = par;
+                return tree;
+            };
         </script>
     </body>
 </html>

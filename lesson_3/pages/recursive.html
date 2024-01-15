@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recursion</title>
+        <script src="mockTree.js"></script>
+    </head>
+    <body>
+        <h1>Tree</h1>
+        <script>
+            function recurseObj(arrObj, ids) {
+                let arr = [];
+
+                if (arrObj && arrObj.length > 0) {
+                    for (let i = 0; i < arrObj.length; i++) {
+                        const element = arrObj[i];
+
+                        if (ids.includes(element.idx)) {
+                            arr.push(element);
+                        } else {
+                            element.children = recurseObj(element.children, ids);
+                            if (element.children.length > 0) {
+                                arr.push(element);
+                            }
+                        }
+                    }
+                }
+
+                return arr;
+            }
+
+            let ids = ["lc10019", "lc10020"];
+            let rslt = recurseObj(tree, ids);
+
+            console.log("rslt", rslt);
+        </script>
+    </body>
+</html>

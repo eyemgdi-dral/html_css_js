@@ -1,0 +1,27 @@
+#ddCon {
+    border: 1px solid #ccc;
+}
+#ddCon .title {
+    display: inline-block;
+    width: 100px;
+}
+#ddCon button {
+    border: 1px solid #ccc;
+    width: 100px;
+}
+#ddCon .dragster {
+    border: 1px solid #ccc;
+    width: 100px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.placeholder {
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 100%;
+}
+
+/* .draggable {
+    background: #fff;
+} */
